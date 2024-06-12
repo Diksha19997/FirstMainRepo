@@ -16,8 +16,13 @@ public class FirstProjectController {
 	private FirstService service;
 	
 	@GetMapping("/hello")
-	public String helloPage() {
+	public String helloPages() {
 		return service.s1();
+	}
+	
+	@GetMapping("/welcome")
+	public String welcomePage() {
+		return "Welcome to Kingdom of SpringBoot!";
 	}
 
 }
