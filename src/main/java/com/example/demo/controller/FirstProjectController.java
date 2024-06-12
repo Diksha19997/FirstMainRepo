@@ -16,7 +16,7 @@ public class FirstProjectController {
 	private FirstService service;
 	
 	@GetMapping("/hello")
-	public String helloPage() {
+	public String helloPages() {
 		return service.s1();
 	}
 
