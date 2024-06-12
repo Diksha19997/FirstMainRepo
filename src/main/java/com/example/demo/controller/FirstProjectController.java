@@ -24,5 +24,10 @@ public class FirstProjectController {
 	public String welcomePage() {
 		return "Welcome to Kingdom of SpringBoot!";
 	}
+	
+	@GetMapping("/exit")
+	public String exitPage() {
+		return "Bye Bye! See you soon";
+	}
 
 }
